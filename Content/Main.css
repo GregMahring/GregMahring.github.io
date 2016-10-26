@@ -1,0 +1,450 @@
+﻿body {
+    margin: 0;
+}
+
+/*font-family: 'Chathura', sans-serif;
+font-family: 'Timmana', sans-serif;
+font-family: 'Josefin Sans', sans-serif;*/
+
+/* The Overlay (background) */
+.sidenav {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.sidenav-content {
+    position: relative;
+    top: 35%; /* 25% from the top */
+    width: 25%; /* 25% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.sidenav a {
+    padding: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .sidenav a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .sidenav a {font-size: 20px}
+    .sidenav .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.background-image{
+    padding: 0;
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-color: #5a5a5a;
+}
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+    position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+ 	height: 800px;
+	transition: opacity 1s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+    background-image: url('../Images/PaintedEucalyptusWide.jpg');
+    z-index:-505;
+    opacity: 1;
+}
+
+.second-image {
+    background-image: url('../Images/SagradaFamiliaStainedGlassWarmAngle.jpg');
+    z-index: -504;
+    opacity: 0;
+}
+
+.third-image {
+    background-image: url('../Images/MauiTree.jpg');
+    z-index:-503;
+    opacity: 0;
+}
+
+.fourth-image {
+    background-image: url('../Images/Haleakala.jpg');
+    z-index:-502;
+    opacity: 0;
+}
+
+.fifth-image {
+    background-image: url('../Images/MuirWoods.jpg');
+    z-index:-501;
+    opacity: 0;
+}
+
+.sixth-image {
+    background-image: url('../Images/LilyPads.jpg');
+    z-index:-500;
+    opacity: 0;
+}
+
+
+.first-image.show {
+	opacity: 1;
+}
+
+.second-image.show {
+	opacity: 1;
+}
+
+.third-image.show {
+	opacity: 1;
+}
+
+.fourth-image.show {
+	opacity: 1;
+}
+
+.fifth-image.show {
+	opacity: 1;
+}
+
+.sixth-image.show {
+	opacity: 1;
+}
+
+header{
+    height:100vh;
+}
+
+.header-text{
+    position:relative;
+    text-align:center;
+    color:#f1f1f1;
+    max-width:50%;
+    max-height:40%;
+    z-index:0;
+    top: 40%;
+    left: 25%;
+}
+
+h1{
+    font-family: 'Timmana', sans-serif;
+    font-size: 90px;
+    font-style: italic;
+    font-weight: 500;
+    text-shadow: 1px 1px 0px #000000;
+    letter-spacing:5px;
+    margin: 0;
+    line-height:80%;
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:17px;
+    font-weight:300;
+    text-shadow: 1px 1px 0px #000000;
+    margin: 0;
+}
+
+#slide{
+    width: 50px;
+    height: 50px;
+    transform:translateZ(1px);
+    position:relative;
+    left: 2%;
+    top: 25px;
+}
+
+#slide img{
+    background-color:rgba(255, 255, 255, 0.7);
+}
+
+
+#projects{
+    background-color: #f1f1f1;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:30px;
+    font-weight:500;
+    color:#383838;
+    text-shadow: 1px 1px 0px #f1f1f1;
+    margin-top:0;
+}
+
+#mechDsgnTitle{
+    text-align:right;
+    margin-right:18px;
+}
+
+#softEngTitle{
+    text-align:left;
+    margin-left:18px;
+}
+
+#softwareEng{
+    padding-bottom:30px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #5a5a5a;
+    height: 80px;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    text-align: left;
+    font-family: 'Timmana', sans-serif;
+    font-size: 40px;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 0px #000000;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: block;
+    background-image: url('../Images/KenziAndFinn.png');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:55% -210%;
+}
+
+#mechDsgnBtn{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#softEngBtn{
+    margin-right: auto;
+    margin-left: 0;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #383838;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0;
+    background-color: #f1f1f1;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    margin-bottom: 0;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.panelText, .panelText.show{
+    width: 35%;
+    margin:0;
+    padding:0;
+    display:inline-block;
+    white-space:normal;
+    font-family: 'Chathura', sans-serif;
+    margin: 5px 18px;
+}
+
+.panel p, .panel.show p{
+    font-size: 25px;
+    color:#383838;
+    font-weight:500;
+    line-height:25px;
+    text-align:justify;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: inline;
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+div.panel.show img{
+    display:inline-block;
+    vertical-align:top;
+}
+
+button.accordion.active{
+    width:100%;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    color: #f1f1f1;
+    float: right;
+    margin-top:15px;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel h4, .panel.show h4{
+    font-size: 28px;
+    color:#383838;
+    font-weight:600;
+    margin-top:0;
+}
+
+.panel i{
+    font-size:36px;
+    color:#383838;
+    margin-left:25px;
+}
+
+#github-tag{
+    font-size:20px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+#softwareEng, #mechDesign{
+    padding-top:20px;
+}
+
+#info {
+    position:absolute;
+    background-image: url('../Images/SagradaFamiliaFacade.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:30% 30%;
+    font-family: 'Chathura', sans-serif;
+    font-size: 25px;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 0px #383838;
+    line-height:23px;
+    height:128%;
+}
+
+#infoTitle{
+    color:#f1f1f1;
+    text-shadow: 1px 1px 0px #383838;
+}
+
+#about, #contact{
+    width:40%;
+    margin-left:2%;
+    padding-top:20px;
+    text-align:justify;
+}
+
+#about ul{
+    max-height: 200px;
+    overflow:hidden;
+    padding:0;
+}
+
+#about li{
+    float:left;
+    display:inline;
+    width:33.33%;
+    font-size:20px;
+}
+
+#contact a{
+    color:#f1f1f1;
+}
+
+#copyright{
+    margin-left:2%;
+    padding-bottom:5px;
+}
+
+#copyright p{
+    margin:0;
+}
+
+#contact i{
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size:60px;
+    }
+
+    h2{
+        font-size:15px;
+    }
+
+    button.accordion{
+        font-size:20px;
+        width:100%;
+    }
+
+    .panelText, .panelText.show{
+        width:95%;
+    }
+
+    #about, #contact{
+        width:90%;
+    }
+
+    #info{
+        font-size:20px;
+        height:150%;
+    }
+
+    #about li{
+        font-size:15px;
+    }
+
+    .panel p, .panel.show p{
+        font-size:20px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .header-text{
+        left:2%;
+    }
+
+    h1{
+        margin-left:auto;
+        margin-right:auto;
+    }
+}

@@ -1,1 +1,246 @@
-Portfolio
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Greg Mahring</title>
+    <link rel="shortcut icon" type="image/png" href="Images/portfolioLogoSmall.png"/>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Chathura|Josefin+Sans:400,700i|Timmana" rel="stylesheet">
+    <script src="https://use.fontawesome.com/a55b975844.js"></script>
+    <link href="Content/Main.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- The overlay -->
+    <div id="mySidenav" class="sidenav">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="#home">Home</a>
+            <a href="#mechDesign">Mechanical Design</a>
+            <a href="#softwareEng">Software Engineering</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </div>
+
+    <div id="main">
+        <header>
+            <div class="main-image" id="home">
+                <div class="background-image toggle-image first-image">
+                </div>
+
+                <div class="background-image toggle-image second-image">
+                </div>
+
+                <div class="background-image toggle-image third-image">
+                </div>
+
+                <div class="background-image toggle-image fourth-image">
+                </div>
+
+                <div class="background-image toggle-image fifth-image">
+                </div>
+
+                <div class="background-image toggle-image sixth-image">
+                </div>
+            </div>
+
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span onclick="openNav()" id="slide"><img src="Images/portfolioLogo.png" /></span>
+
+            <div class="header-text" data-type="content" data-scroll-speed="1">
+                <h1 class="siteTitle">GREG MAHRING</h1>
+                <h2 class="subTitle">SOFTWARE ENGINEERING APPRENTICE | MECHANICAL DESIGNER</h2>
+            </div>
+
+
+        </header>
+
+        <section id="projects" data-type="content" data-scroll-speed="1">
+            <div id="mechDesign">
+                <h3 id="mechDsgnTitle">MECHANICAL DESIGN</h3>
+                <button class="accordion" id="mechDsgnBtn">Handle Height Adjustor</button>
+                <div class="panel">
+                    <div class="panelText">
+                        <h4>Handle Height Adjustor for a Walk Behind Lawn Mower</h4>
+                        <p>
+                            For this project, I was given the task of designing a user friendly system to adjust the height of a walk behind lawn mower handle that was
+                            effective. The system needed to have 3 height positions and be strong enough to withstand the rigors of mowing a lawn. On top of that,
+                            the system needed to fit with the design aesthetic that was established for the rest of the mower line. This system utilizes two pieces with
+                            a "tooth" system to index to the 3 desired positions. A toggle lever is used to disengage the teeth to allow for rotation and to engage the
+                            teeth and lock the system. It took several iterations to ensure a proper fit with the handle and the two pieces of the system. Collaboration
+                            with the Industrial Design department was also key to ensure the aesthetics aspects of the project were met.
+                        </p>
+                    </div>
+                    <img src="Images/Hndl_Ht_Adj.jpg" />
+                    <img src="Images/Hndl_Ht_Adj_Expl.jpg" />
+                </div>
+
+                <button class="accordion" id="mechDsgnBtn">Triloy Mower</button>
+                <div class="panel">
+                    <div class="panelText">
+                        <h4>Triloy Mower Rear Baffle and Lower Handles</h4>
+                        <p>
+                            The task for this project was to create a structural rear piece for a lawn mower that incorporated the rear discharge chute, housed the self-
+                            propelled transmission and acted as a means to attach the handle of the lawn mower. This project also involved designing the lower handle
+                            pieces which also housed half of the mechanism to adjust the handle height to 3 separate positions. This system was to be used on the top of
+                            the line lawn mower series sold for the European market, so the components needed to be strong and fit the aesthetic requirements of the mower.
+                            These components were made from die cast aluminum for strength and weight properties. Collaboration with the Industrial Design department was
+                            key to obtaining the aesthetics necessary for the project while also maintaining proper manufacturability.
+                        </p>
+                    </div>
+                    <img src="Images/Dealer_Mower_Cast_Parts.jpg" />
+                </div>
+
+                <button class="accordion" id="mechDsgnBtn">Lawnmower Drive Control</button>
+                <div id="foo" class="panel">
+                    <div class="panelText">
+                        <h4>Blade Engagement Lever and Housing for Electric Lawnmower</h4>
+                        <p>The concept behind this project was to develop a means for engaging the blade for an electric lawn mower. To conform to safety regulations
+                           for the intended market, the blade could not be engaged by a direct action, but needed a secondary action by the user. By depressing the
+                           button, it nests with the lever. Then as the lever is pulled, the button rotates and the finger on the button triggers the electric switch.
+                           This project also needed to fit within the aesthetic scope of the project, which involved a great deal of collaboration with the Industrial
+                           Design department.</p>
+                    </div>
+                    <img src="Images/New_Switch_Box_Concept.jpg" />
+                    <img src="Images/New_Switch_Box_Concept_Expl.jpg" />
+                </div>
+
+                <button class="accordion" id="mechDsgnBtn">Auxiliary Mirror</button>
+                <div id="foo" class="panel">
+                    <div class="panelText">
+                        <h4>Auxiliary Mirror for Heavy Truck</h4>
+                        <p>The task for this project was to develop an Auxiliary Mirror system for an on-highway heavy truck that was in development. The Auxiliary 
+                           Mirror mounts to the front of the hood and allows the driver to see areas that are not visible with the Primary Mirror. There were many
+                           safety standards and strength requirements that needed to be met to make the project successful. The mirror needed to cover a specific
+                           field of view and also have adjustability.  The arm and mounting features were held to very strict strength and vibration requirments, all
+                           under very tight time constraints.</p>
+                    </div>
+                    <img src="Images/38N_ Aux_ Mirror.jpg" />
+                </div>
+            </div>
+
+            <div id="softwareEng">
+                <h3 id="softEngTitle">SOFTWARE ENGINEERING</h3>
+                <button class="accordion" id="softEngBtn">Tech Product Review Site</button>
+                <div class="panel">
+                    <div class="panelText">
+                        <h4>Review Site for Technology Products</h4>
+                        <p>This requirements for this project was to develop a review site utilizing code-first MVC development using ASP.Net.  The site allows the user
+                           to enter reviews for a given subject and also the option to view more details for the reviews. The development of the site involved setting up
+                           primary and foreign key relationships between the tables in the database to allow for data to be properly shared. A key requirement of the
+                           project was to utilize Bootstrap while using HTML5 and CSS3 to style the website to make it look more appealing.
+                        </p>
+                        <a href="https://github.com/GregMahring/MVCTechReviewSite.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <p id="github-tag">View the code here!</p>
+                    </div>
+                    <img src="Images/ReviewSiteMain.png" />
+                    <img src="Images/ReviewSiteDetails.png" />
+                </div>
+
+                <button class="accordion" id="softEngBtn">Bank Account Project</button>
+                <div class="panel">
+                    <div class="panelText">
+                        <h4>Bank Account Management System</h4>
+                        <p>The scope of this project involved creating a console application using C# to allow the user to manage their savings, checking and reserve
+                           accounts. The project needed to utilize Object Oriented Programming using inheritance to set up the accounts. The user was to have the ability
+                           to view their personal information, make a deposit into each account, make a withdrawal from each account and view each account balance. In
+                           addition, a statement file was to be created for each account, tracking all the transactions that were made for each account.</p>
+                        <a href="https://github.com/GregMahring/BankAccountProject.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <p id="github-tag">View the code here!</p>
+                    </div>
+                    <img src="Images/BankAccountNavScreen.png" />
+                    <img src="Images/BankAccountInfoScreen.png" />
+                    <img src="Images/BankAccountStatement.png" />
+                </div>
+
+                <button class="accordion" id="softEngBtn">Virtual Droid Game</button>
+                <div class="panel">
+                    <div class="panelText">
+                        <h4>Virtual Droid Game</h4>
+                        <p>This project was an introduction to Object Oriented Programming, utilizing a separate class to create a console based "Virtual Pet" game using
+                           C#. Being a huge Star Wars fan, I decided to create a Virtual Droid game which lets the user perform certain actions that are aimed at keeping
+                           values for various categories within a certain range. A Droid class was created to define and control what each entered action does, while the
+                           Program class set up the user interface.</p>
+                        <a href="https://github.com/GregMahring/MyVirtualPet.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <p id="github-tag">View the code here!</p>
+                    </div>
+                    <img src="Images/VirtualDroidIntro.png" />
+                    <img src="Images/VirtualDroidGameScreen.png" />
+                </div>
+
+                <button class="accordion" id="softEngBtn">Virtual Closet Web App</button>
+                <div class="panel">
+                    <div class="panelText">
+                        <h4>Virtual Closet Web Application</h4>
+                        <p>The purpose of this project was to create a web application that allows the user to manage items of clothing within multiple categories. The
+                           user needed to have the ability to add, view, edit and remove items of clothing in their wardrobe, as well as view an image for each item
+                           created. The application was to be created by setting up an MSSQL database structure, using primary and foreign keys when necessary, to drive
+                           the creation of an ASP.Net MVC project in Visual Studio. The application also required knowledge of HTML5 and CSS3, while utilizing Bootstrap,
+                           to create a strong aesthetic for the application. As an extra task, the user was given the ability to create and save "outfits" from the items
+                           stored in their wardrobe.</p>
+                        <a href="https://github.com/GregMahring/Wardrobe.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <p id="github-tag">View the code here!</p>
+                    </div>
+                    <img src="Images/WardrobeMain.png" />
+                    <img src="Images/TopsMain.png" />
+                    <img src="Images/OutfitMain.png" />
+                </div>
+            </div>
+        </section>
+
+        <section id="info" data-type="content" data-scroll-speed="1">
+            <div id="about">
+                <h3 id="infoTitle">ABOUT</h3>
+                <p>Greg Mahring is an aspiring Software Engineer who also has a great deal of experience in Mechanical Design as well as Industrial Design.
+                   He is incredibly detailed and focused on delivering the best product possible, regardless of medium.  A tireless worker, Greg will go to 
+                   great lengths to ensure the product delivered meets, or ideally exceeds expectations in both form and function, while also providing the
+                   best user experience possible.</p>
+                <p>There are many things that provide a huge influence in Greg's life, none more so than family. Family is the driving force behind everything
+                   he has done and will be the leading factor in the heights he will achieve in the future.  Greg is also a certified Soccer and Golf nut,
+                   but a huge sports fan in general, which have played a huge influence in his life. It cannot be forgotten that Greg is also an avid Star Wars
+                   fan.</p>
+                <p>Greg has developed many abilities during his development, some of which can be seen below:</p>
+                <ul id="triple">
+                    <li>C#/ASP.Net</li>
+                    <li>MVC</li>
+                    <li>Object Oriented Programming</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Bootstrap</li>
+                    <li>Javascript/jQuery</li>
+                    <li>SQL/MSSQL</li>
+                    <li>Source Control/Git</li>
+                    <li>Product Development Process</li>
+                    <li>Product Lifecycle Management</li>
+                    <li>Design for Manufacturing</li>
+                    <li>Design for Assembly</li>
+                    <li>Industrial Design</li>
+                    <li>3D CAD Modeling and Surfacing</li>
+                </ul>
+            </div>
+
+            <div id="contact">
+                <h3 id="infoTitle">CONTACT</h3>
+                <p>Please let me know if you are working on any interesting projects or would like to collaborate</p>
+                <a href="mailto:mahring190@aol.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/greg-mahring" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="https://github.com/GregMahring"target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+
+            <div id="copyright">
+                <p><br />&copy; 2016 Greg Mahring  |  All work is &copy; 2008-2016 Greg Mahring</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
