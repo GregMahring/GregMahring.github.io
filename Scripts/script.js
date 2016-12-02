@@ -4,10 +4,17 @@
 
     for (i = 0; i < acc.length; i++) {
         acc[i].onclick = function () {
-            this.classList.toggle("active");
+            this.classList.toggle("open");
             this.nextElementSibling.classList.toggle("show");
         }
     }
+
+    $('.carousel').each(function () {
+        $(this).carousel({
+            pause: true,
+            interval: false
+        });
+    });
 
     $.fn.moveIt = function () {
         var $window = $(window);
